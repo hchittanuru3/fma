@@ -1,5 +1,7 @@
 # FMA: A Dataset For Music Analysis
 
+## NOTE: This repository allows for a packaged install of FMA. To view the original repository, please visit https://github.com/mdeff/fma.
+
 [Michaël Defferrard](https://deff.ch), [Kirell Benzi](https://kirellbenzi.com),
 [Pierre Vandergheynst](https://people.epfl.ch/pierre.vandergheynst),
 [Xavier Bresson](https://www.ntu.edu.sg/home/xbresson),
@@ -116,24 +118,10 @@ developed for the dataset.
 	pyenv activate fma
 	```
 
-1. Clone the repository.
+1. Clone the repository and install it as a package.
 	```sh
 	git clone https://github.com/mdeff/fma.git
-	cd fma
-	```
-
-1. Checkout the revision matching the data you downloaded (e.g., `beta`, `rc1`,
-   `v1`). See the [history](#history) of the dataset.
-	```sh
-	git checkout rc1
-	```
-
-1. Install the Python dependencies from `requirements.txt`. Depending on your
-   usage, you may need to install [ffmpeg] or [graphviz]. Install [CUDA] if you
-   want to train neural networks on GPUs (see
-   [Tensorflow's instructions](https://www.tensorflow.org/install/)).
-	```sh
-	make install
+	pip install -e fma
 	```
 
 1. Fill in the configuration.
