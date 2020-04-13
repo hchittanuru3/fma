@@ -13,3 +13,9 @@ __pycache__/
 *.pickle
 *.mp3
 *.pdf
+
+venv/
+.DS_Store
+build/*
+/dist/
+/*.egg-info
